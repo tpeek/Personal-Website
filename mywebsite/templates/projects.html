@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+<body>
+
+<div id="content">
+
+<p class="project_tile">
+<a href="http://sherlockengine.com/" target="_blank">
+<h3>Sherlock Engine</h3>
+<img class="project_pic" src="{% static 'brain.jpg' %}"></a>
+<p>A website that predicts what a user's answers will be to a set of questions using their
+previous answers, the previous answers of other users, and multiple linear regression.</p>
+</p>
+<br>
+<br>
+<p class="project_tile">
+<a href="http://copynhaste.com/" target="_blank">
+<h3>Copy N Haste</h3>
+<img class="project_pic" src="{% static 'copy.jpg' %}"></a>
+<p>A website that predicts what a user's answers will be to a set of questions using their
+previous answers, the previous answers of other users, and multiple linear regression.</p>
+</p>
+
+</div>
+</body>
+{% endblock %}

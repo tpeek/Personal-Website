@@ -1,0 +1,178 @@
+/**************************
+GENERAL
+**************************/
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#wrapper {
+  font-family: "Courier New", monospace;
+  margin: 0 auto;
+  padding: 0 5%;
+  min-height:100%;
+  position:relative;
+  background-image: url("yellow.JPG");
+  background-size: cover;
+}
+
+#content {
+  padding-bottom:100px;
+  background-color: rgb(126, 126, 126);
+  opacity: .9;
+  font-size: 1.5em;
+  padding: 15px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#me {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 500px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/**************************
+HEADING
+**************************/
+
+#header {
+  margin: 0 0 40px 0;
+  padding: 1px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(126, 126, 126);
+  opacity: .9;
+}
+
+.name {
+  margin: 1px 0;
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 1em;
+  margin: -5px;
+  font-weight: normal;
+}
+
+
+/**************************
+NAVIGATION
+**************************/
+nav {
+  text-align: center;
+  margin: 10px;
+  border-style: inset;
+  box-shadow: 0px 20px 80px #222;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  margin: -6px 50px 6px 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+/**************************
+Footer
+**************************/
+
+#footer {
+  background: rgb(126, 126, 126);
+  width:100%;
+  height:40px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  text-align: center;
+  opacity: .8;
+}
+
+.logo {
+  height: 16px;
+  width: auto;
+}
+
+
+/**************************
+PROJECT
+**************************/
+.project_pic {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.project_tile {
+  width: 50%;
+}
+
+
+/**************************
+COLORS
+**************************/
+
+/* Site Body */
+body {
+  color: #000;
+  text-indent: 50px;
+}
+
+h1, h2 {
+  color: #000;
+}
+
+header {
+  border-color: #e58331;
+}
+
+/* Nav Background */
+nav {
+
+}
+
+/* Logo Text */
+header h1, header h2 {
+  color: #ffe6b5;
+}
+
+/* Links */
+a, a:visited {
+  color: black;
+}
+
+a.selected, a:hover {
+  color: #dd6a0a;
+}
+
+/* Nav Links */
+nav a, nav a:visited {
+  color: #ffe6b5;
+}
+
+nav a.selected, nav a:hover {
+  color: #333;
+}

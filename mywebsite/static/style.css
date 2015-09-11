@@ -3,9 +3,10 @@ GENERAL
 **************************/
 html,
 body {
-  margin:0;
-  padding:0;
-  height:100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-indent: 0;
 }
 
 #wrapper {
@@ -15,12 +16,12 @@ body {
   position:relative;
   background-image: url("yellow.JPG");
   background-size: cover;
+  text-indent: 0;
 }
 
 #content {
   padding-bottom:100px;
-  background-color: rgb(126, 126, 126);
-  opacity: .9;
+  background-color: rgba(160, 160, 160, .85);
   font-size: 1.5em;
   padding: 15px;
   max-width: 900px;
@@ -34,6 +35,7 @@ a {
 
 #me {
   display: block;
+  margin: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
@@ -44,13 +46,17 @@ ul {
   list-style-type: none;
 }
 
+.inline {
+  display: inline;
+}
+
 
 /**************************
 HEADING
 **************************/
 
 #header {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   padding: 1px;
   width: 100%;
   text-align: center;
@@ -59,7 +65,7 @@ HEADING
 }
 
 .name {
-  margin: 1px 0;
+  margin: 20px 0 0;
   font-size: 4em;
   font-weight: normal;
   line-height: 0.8em;
@@ -85,11 +91,11 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: -6px 50px 6px 0;
 }
 
 nav li {
   display: inline-block;
+  margin: 0 5% 0;
 }
 
 
@@ -106,6 +112,7 @@ Footer
   left:0;
   text-align: center;
   opacity: .8;
+  text-indent: 0;
 }
 
 .logo {
@@ -120,13 +127,14 @@ PROJECT
 .project_pic {
   width: 90%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   max-width: 600px;
 }
 
-.project_tile {
-  width: 50%;
+#tiles {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
 }
 
 
@@ -134,37 +142,14 @@ PROJECT
 COLORS
 **************************/
 
-/* Site Body */
-body {
-  color: #000;
-  text-indent: 50px;
-}
-
-h1, h2 {
-  color: #000;
-}
-
-header {
-  border-color: #e58331;
-}
-
-/* Nav Background */
-nav {
-
-}
-
-/* Logo Text */
-header h1, header h2 {
-  color: #ffe6b5;
-}
-
 /* Links */
 a, a:visited {
-  color: black;
+  color: #000;
 }
 
 a.selected, a:hover {
   color: #dd6a0a;
+  width: 90%;
 }
 
 /* Nav Links */

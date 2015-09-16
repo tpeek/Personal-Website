@@ -14,7 +14,8 @@ body {
   margin: 0 auto;
   padding: 0 5%;
   position:relative;
-  background-image: url("yellow.JPG");
+  background: url("yellow.JPG");
+  background-attachment:fixed;
   background-size: cover;
   text-indent: 0;
 }

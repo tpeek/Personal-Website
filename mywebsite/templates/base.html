@@ -18,7 +18,7 @@
     }
 
     function change() {
-        var myArray = [-2, -1, 0, 1, 2];
+        var myArray = [-1, 0, 1];
         red += myArray[Math.floor(Math.random() * myArray.length)];
         green += myArray[Math.floor(Math.random() * myArray.length)];
         blue += myArray[Math.floor(Math.random() * myArray.length)];
@@ -27,7 +27,10 @@
     $("body").mousemove(function() {
         change();
         $("#header, #footer").css("background-color", 'rgb(' + red + ',' + green + ',' + blue + ')');
+        // $("#wrapper").css("background-color", 'rgb(' + opposite(red) + ',' + opposite(green) + ',' + opposite(blue) + ')');
     });
+
+
   </script>
 <div id="header"><h1 class="name">Tyler Peek</h1>
   <h2>Software Developer</h2>

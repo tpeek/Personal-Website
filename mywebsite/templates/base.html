@@ -27,17 +27,23 @@
     $("body").mousemove(function() {
         change();
         $("#header, #footer").css("background-color", 'rgb(' + red + ',' + green + ',' + blue + ')');
-        // $("#wrapper").css("background-color", 'rgb(' + opposite(red) + ',' + opposite(green) + ',' + opposite(blue) + ')');
     });
 
 
   </script>
 <div id="header"><h1 class="name">Tyler Peek</h1>
-  <h2>Software Developer</h2>
+  <h2 id="job"><a href="https://github.com/tpeek">
+    <img class="logo" src="{% static 'git.png' %}"> GitHub
+  </a> | <a href="https://www.linkedin.com/in/tylerpeek">
+    <img class="logo" src="{% static 'linkedin.png' %}"> LinkedIn
+  </a>
+  | <strong>Software Developer</strong> |
+  <a href="mailto:Tyler@Peek.work">
+    <img class="logo" src="{% static 'email.png' %}"> email
+  </a></h2>
   <nav>
     <ul>
       <li><a href="{% url 'home' %}">Profile</a></li>
-      <li><a href="{% url 'projects' %}">Projects</a></li>
       <li><a href="{% url 'bike_tour' %}">Bike Tour</a></li>
     </ul>
 </nav>
@@ -46,14 +52,14 @@
 {% endblock %}<br><br><br>
 <footer id="footer"><br>
   <a href="https://github.com/tpeek">
-    <img class="logo" src="{% static 'git.png' %}">
+    <img class="logo" src="{% static 'git.png' %}"> GitHub
   </a>
   <a href="https://www.linkedin.com/in/tylerpeek">
-    <img class="logo" src="{% static 'linkedin.png' %}">
+    <img class="logo" src="{% static 'linkedin.png' %}"> LinkedIn
   </a>
   | &copy; 2015 Tyler Peek. |
   <a href="mailto:Tyler@Peek.work">
-    <img class="logo" src="{% static 'email.png' %}">
+    <img class="logo" src="{% static 'email.png' %}"> email
   </a>
 </footer>
 </div>
